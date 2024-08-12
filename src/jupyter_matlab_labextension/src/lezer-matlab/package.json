@@ -24,7 +24,8 @@
   "dependencies": {
     "@lezer/common": "^1.2.0",
     "@lezer/highlight": "^1.0.0",
-    "@lezer/lr": "^1.0.0"
+    "@lezer/lr": "^1.0.0",
+    "copyfiles": "^2.4.1"
   },
   "scripts": {
     "build": "lezer-generator src/matlab.grammar -o src/parser && rollup -c && npm run copy-lezer-files-to-build-on-windows",

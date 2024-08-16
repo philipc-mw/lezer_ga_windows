@@ -29,7 +29,7 @@
   "scripts": {
     "build": "lezer-generator src/matlab.grammar -o src/parser && rollup -c && npm run copy-lezer-files-to-build-on-windows",
     "build-debug": "lezer-generator src/matlab.grammar --names -o src/parser && rollup -c && ls dist/ && npm run copy-lezer-files-to-build-on-windows && ls dist/",
-    "copy-lezer-files-to-build-on-windows": "copy src\*.js dist\ || true",
+    "copy-lezer-files-to-build-on-windows": "copy src\\*.js dist\\ || true",
     "prepare": "npm run build",
     "test": "mocha test/test-*.js"
   }
